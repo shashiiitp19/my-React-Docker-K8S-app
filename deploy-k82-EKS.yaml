@@ -19,7 +19,7 @@ spec:
       containers:
       - name: react-app
         # Docker Image
-        image: 532806123370.dkr.ecr.us-east-1.amazonaws.comshashi1995/react-app:v1
+        image: 532806123370.dkr.ecr.us-east-1.amazonaws.com/react-app-ecr-repo
         imagePullPolicy: Always
 #         resources:
 #          #cpu and memory limit
