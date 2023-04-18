@@ -3,9 +3,9 @@
 
 "Deployment-Detailed-Explanation" file will guide you for Step by Step Deployment of React-App on AWS EKS with Jenkins.
 
-RUN & TEST REACT APP
-npm install
-npm start
+RUN & TEST REACT APP with
+"npm install" &
+"npm start"
 
 In the git repo please find the PDF file "Deployment-Detailed-Explanation" for step by step understanding of this deployment.
 Follow these steps:
