@@ -19,26 +19,31 @@ spec:
       # Container Details
       containers:
       - name: react-app
-        image: 532806123370.dkr.ecr.us-east-1.amazonaws.com/react-app:latest
+        image: 532806123370.dkr.ecr.us-east-1.amazonaws.com/react-app
         imagePullPolicy: Always
         ports:
         #the port on which the app can be reached out inside the container
         - containerPort: 3000
-
----
+          name: http
+          protocol: TCP
+          
 #access the app in outer world with the help of load balancer
 #service 
 apiVersion: v1
 kind: Service
 metadata:
+  labels:
+    app: react-app
+    k8s-app: react-app
    #the Serivce Name- it should match with the lable name of the deployment 
   name: react-app
 spec:
   ports:
   - name: http
-  - port: 80
-    targetPort: 3000
+    port: 80
     protocol: TCP
+    targetPort: 3000
+    
 #     nodePort: 31000
   type: LoadBalancer
   selector:
