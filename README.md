@@ -1,12 +1,10 @@
-# my-React-Docker-K8S-app
+# Kubernetes React App Deployment with AWS & Jenkins
 <img alt="Coding" width=500 height=300 src="https://user-images.githubusercontent.com/76843511/232758785-3234d819-0cbc-4818-8237-b378467a9bbf.png" alt="shashikumar" />
 
-
-# Deployment-Detailed-Explanation file will guide you for Step by Step Deployment of React-App on AWS EKS with Jenkins
+"Deployment-Detailed-Explanation" file will guide you for Step by Step Deployment of React-App on AWS EKS with Jenkins.
 
 In the git repo please find the PDF file "Deployment-Detailed-Explanation" for step by step understanding of this deployment.
-
-Oth step- Create and ssh to EC2 instance and ADD ports- 80, 8080, 3000 to ec2 security group.
+Follow these steps:
 1. install java
 2. install jenkins
 3. Start jenkins
